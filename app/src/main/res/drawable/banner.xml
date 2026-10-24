@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path
+        android:fillColor="#07070A"
+        android:pathData="M0,0h320v180h-320z" />
+    <!-- Thin gold frame -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#9C7425"
+        android:strokeWidth="1.5"
+        android:pathData="M12,12h296v156h-296z" />
+    <!-- Gold "K" monogram -->
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M140,54h9v72h-9z M149,89L181,54h12L155,95z M156,86L195,126h-12L149,96z" />
+</vector>

@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#07070A"
+        android:pathData="M18,0h72a18,18 0,0 1,18 18v72a18,18 0,0 1,-18 18h-72a18,18 0,0 1,-18 -18v-72a18,18 0,0 1,18 -18z" />
+    <!-- Gold "K" monogram -->
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M36,28h7v52h-7z M43,53L66,28h9L49,57z M48,51L76,80h-9L43,58z" />
+</vector>

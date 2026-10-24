@@ -1,0 +1,17 @@
+# Gradle and build output
+.gradle/
+build/
+.kotlin/
+
+# Machine-specific
+local.properties
+deploy.local.ps1
+*.keystore
+*.jks
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.DS_Store
+captures/
