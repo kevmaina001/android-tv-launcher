@@ -24,7 +24,24 @@ Built for and tested on a Hisense A4 (Android 9, 1080p). It should work on any A
 
 To change which apps are pinned, edit `FAVOURITE_PACKAGES` in [`TvRepository.kt`](app/src/main/java/com/kev/launcher/TvRepository.kt).
 
-## Install
+## Install the APK (no computer needed)
+
+1. On the TV, install **Downloader** (by AFTVnews) from the Play Store.
+2. Allow it to install apps: Settings → Device Preferences → Security & restrictions → **Unknown sources** → turn on **Downloader**.
+3. In Downloader, enter this link, then press **Install**:
+   ```
+   https://github.com/kevmaina001/android-tv-launcher/releases/latest/download/kev-launcher.apk
+   ```
+4. Open **Kev** from your apps. It asks for your name, then for permission to show Continue watching. Press **Allow**.
+
+Kev now works when you open it from the apps row, but the HOME button still goes to the TV's own launcher, because Android TV has no "default launcher" setting. To make HOME open Kev, run this once over ADB, either from a computer or from a phone app such as Bugjaeger:
+```
+adb connect <tv-ip>
+adb shell pm disable-user --user 0 com.google.android.tvlauncher
+```
+To undo it, run `adb shell pm enable com.google.android.tvlauncher`.
+
+## Build from source
 
 You need a computer with the [Android SDK platform tools](https://developer.android.com/tools/releases/platform-tools) (`adb`) and JDK 17 or later.
 
